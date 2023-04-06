@@ -23,11 +23,10 @@ describe('product page', () => {
         username:"sally",
         password:"ilovesally<3",
       };
-  cy.visit(url, { auth });
-    cy.visit('https://www.admin.stg.supplyally.gov.sg/')
+  cy.visit('https://www.admin.stg.supplyally.gov.sg/', { auth });
   })
 
-  it('displays product item', () => {
+  it('displays cfp card', () => {
     cy.get(`[data-cy="mock-sp-login-button"]`).click();
     cy.get(`[data-cy=cfp-campaign-card]`).first().should("be.visible"); // should validate the stubbed response
   })
