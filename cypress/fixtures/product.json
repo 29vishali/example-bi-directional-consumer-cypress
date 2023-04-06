@@ -1,31 +1,128 @@
-{
-  "id": "4b87fb3e-9e66-4f52-976e-74dd2caf38e3",
-  "name": "User location role",
-  "updatedAt": "2022-12-14T05:21:21.612Z",
-  "location": {
-    "id": "8880950e-ebdc-4bde-8cb6-0141359e45ae",
-    "name": "Radin Mas CC",
-    "environment": {
-      "id": "bf991c7b-8d25-479a-ab14-4fd6940897ae",
-      "name": "FFTH CFP",
-      "alias": "CFP",
-      "metadata": {
-        "title": "FFTH Community Food Pack",
-        "isActive": true,
-        "subtitle": "Food from the Heart",
-        "campaignStartDate": "September 2, 2020"
-      },
-      "endpoint": "api.ffth-cfp-stg.sally-dev.stack.gov.sg"
+[
+    {
+        "id": "4b87fb3e-9e66-4f52-976e-74dd2caf38e3",
+        "name": "User location role",
+        "updatedAt": "2022-12-14T05:21:21.612Z",
+        "location": {
+            "id": "8880950e-ebdc-4bde-8cb6-0141359e45ae",
+            "name": "Radin Mas CC",
+            "environment": {
+                "id": "bf991c7b-8d25-479a-ab14-4fd6940897ae",
+                "name": "FFTH CFP",
+                "alias": "CFP",
+                "metadata": {
+                    "title": "FFTH Community Food Pack",
+                    "isActive": true,
+                    "subtitle": "Food from the Heart",
+                    "campaignStartDate": "September 2, 2020"
+                },
+                "endpoint": "api.ffth-cfp-stg.sally-dev.stack.gov.sg"
+            }
+        },
+        "role": {
+            "id": "0ec010f7-4bc6-469c-9dcb-85332c8ea035",
+            "name": "Super admin",
+            "description": "Super admin role"
+        },
+        "user": {
+            "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
+            "name": "Alice Wonderwoman",
+            "nric": "*****001I"
+        }
+    },
+    {
+        "id": "c6f20eb8-fa82-41f5-bc33-64f639f47902",
+        "name": "Alice Wonderwoman",
+        "updatedAt": "2023-01-03T06:24:29.494Z",
+        "location": {
+            "id": "e596427d-e692-4660-9614-d0617ca48fe2",
+            "name": "Kallang CC",
+            "environment": {
+                "id": "bf991c7b-8d25-479a-ab14-4fd6940897ae",
+                "name": "FFTH CFP",
+                "alias": "CFP",
+                "metadata": {
+                    "title": "FFTH Community Food Pack",
+                    "isActive": true,
+                    "subtitle": "Food from the Heart",
+                    "campaignStartDate": "September 2, 2020"
+                },
+                "endpoint": "api.ffth-cfp-stg.sally-dev.stack.gov.sg"
+            }
+        },
+        "role": {
+            "id": "efb43cfa-c790-4850-823c-3618e229c5e7",
+            "name": "Admin",
+            "description": "Admin role"
+        },
+        "user": {
+            "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
+            "name": "Alice Wonderwoman",
+            "nric": "*****001I"
+        }
+    },
+    {
+        "id": "5dd73355-c594-4d2b-ad56-72b6e4a90ef3",
+        "name": "Admin Alice for NSHT",
+        "updatedAt": "2023-01-27T08:00:00.000Z",
+        "location": {
+            "id": "ec7dbf1b-10dd-489c-b5eb-7cc863db3243",
+            "name": "All",
+            "environment": {
+                "id": "e3af7d7e-c9e2-455e-8ccc-237082a28e84",
+                "name": "NS Home Team Voucher",
+                "alias": "MHA",
+                "metadata": {
+                    "title": "NS Home Team Voucher",
+                    "isActive": true,
+                    "subtitle": "MHA",
+                    "campaignEndDate": "August 1, 2023",
+                    "campaignStartDate": "August 30, 2022"
+                },
+                "endpoint": "nsht.api.stg.supplyally.gov.sg"
+            }
+        },
+        "role": {
+            "id": "efb43cfa-c790-4850-823c-3618e229c5e7",
+            "name": "Admin",
+            "description": "Admin role"
+        },
+        "user": {
+            "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
+            "name": "Alice Wonderwoman",
+            "nric": "*****001I"
+        }
+    },
+    {
+        "id": "a6d881c7-c42c-4ce7-95a7-37a88c7f4112",
+        "name": "Admin Alice for Safra Voucher",
+        "updatedAt": "2023-01-27T08:00:00.000Z",
+        "location": {
+            "id": "bd082019-ec18-4517-8b23-9c0d6aa53377",
+            "name": "All",
+            "environment": {
+                "id": "eae38742-694c-46ca-b764-661494b3f08d",
+                "name": "Safra Voucher",
+                "alias": "SAFRA",
+                "metadata": {
+                    "title": "Safra Voucher",
+                    "isActive": true,
+                    "subtitle": "MINDEF",
+                    "campaignEndDate": "August 1, 2023",
+                    "campaignStartDate": "August 1, 2023"
+                },
+                "endpoint": "safra.api.stg.supplyally.gov.sg"
+            }
+        },
+        "role": {
+            "id": "efb43cfa-c790-4850-823c-3618e229c5e7",
+            "name": "Admin",
+            "description": "Admin role"
+        },
+        "user": {
+            "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
+            "name": "Alice Wonderwoman",
+            "nric": "*****001I"
+        }
     }
-  },
-  "role": {
-    "id": "0ec010f7-4bc6-469c-9dcb-85332c8ea035",
-    "name": "Super admin",
-    "description": "Super admin role"
-  },
-  "user": {
-    "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
-    "name": "Alice Wonderwoman",
-    "nric": "*****001I"
-  }
-}
+]

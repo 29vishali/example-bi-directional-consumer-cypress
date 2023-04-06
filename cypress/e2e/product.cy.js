@@ -1,22 +1,19 @@
 const productResponse = require('../fixtures/product.json')
+const activeSession = require('../fixtures/activeSession.json')
 
 describe('product page', () => {
   beforeEach(() => {
     cy.intercept(
       {
-        method: 'GET',
-        url: '**/userLocationRoles'
+        method: 'POST',
+        url: '**/checkForActive'
       },
       {
         statusCode: 200,
-        body: { ...productResponse },
-        headers: {
-          'access-control-allow-origin': '*',
-          Cookie:
-            'token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4OTYwMzNhZC0yYzcwLTRkNmMtOTY1Ny1mZWVlOWE0OGQxOTUiLCJzZXNzaW9uSWQiOiI4MjhjMDkyOC0xNTE1LTQyZWQtYmJkOS1jM2Q4OTBhOTBlMDkiLCJleHAiOjE2ODA3OTUyNjUsImlhdCI6MTY4MDc5MTY2NX0.diE_CJjg1aI0g7CNlLNc-9Q-J0Bqj5CtC0hB5JYIC1WI4Ooi5aE06OsQaEy2ChxF_HeNH2dYSDvMJtREfkJV3Q'
-        }
+        body: { ...activeSession }
       }
-    ).as('getProduct')
+    ).as('getActiveSession')
+    
     cy.setupPact(Cypress.env('PACT_CONSUMER'), Cypress.env('PACT_PROVIDER'))
 
     const auth =  {
@@ -32,6 +29,6 @@ describe('product page', () => {
   })
 
   after(() => {
-    cy.usePactWait(['getProduct'])
+    cy.usePactWait(['getActiveSession'])
   })
 })
