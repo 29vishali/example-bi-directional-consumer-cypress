@@ -1,1 +1,31 @@
-{"id":"09","type":"CREDIT_CARD","name":"Gem Visa","price":99.99}
+{
+  "id": "4b87fb3e-9e66-4f52-976e-74dd2caf38e3",
+  "name": "User location role",
+  "updatedAt": "2022-12-14T05:21:21.612Z",
+  "location": {
+    "id": "8880950e-ebdc-4bde-8cb6-0141359e45ae",
+    "name": "Radin Mas CC",
+    "environment": {
+      "id": "bf991c7b-8d25-479a-ab14-4fd6940897ae",
+      "name": "FFTH CFP",
+      "alias": "CFP",
+      "metadata": {
+        "title": "FFTH Community Food Pack",
+        "isActive": true,
+        "subtitle": "Food from the Heart",
+        "campaignStartDate": "September 2, 2020"
+      },
+      "endpoint": "api.ffth-cfp-stg.sally-dev.stack.gov.sg"
+    }
+  },
+  "role": {
+    "id": "0ec010f7-4bc6-469c-9dcb-85332c8ea035",
+    "name": "Super admin",
+    "description": "Super admin role"
+  },
+  "user": {
+    "id": "896033ad-2c70-4d6c-9657-feee9a48d195",
+    "name": "Alice Wonderwoman",
+    "nric": "*****001I"
+  }
+}
