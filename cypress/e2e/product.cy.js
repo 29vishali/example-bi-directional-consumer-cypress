@@ -6,14 +6,14 @@ describe('product page', () => {
     cy.intercept(
       {
         method: 'POST',
-        url: '**/checkForActive'
+        url: '**/session/checkForActive'
       },
       {
         statusCode: 200,
         body: { ...activeSession }
       }
     ).as('getActiveSession')
-    
+
     cy.setupPact(Cypress.env('PACT_CONSUMER'), Cypress.env('PACT_PROVIDER'))
 
     const auth =  {
