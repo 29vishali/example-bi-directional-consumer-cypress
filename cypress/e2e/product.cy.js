@@ -1,4 +1,3 @@
-const productResponse = require('../fixtures/product.json')
 const activeSession = require('../fixtures/activeSession.json')
 
 describe('product page', () => {
