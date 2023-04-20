@@ -24,7 +24,7 @@ describe('product page', () => {
 
   it('displays cfp card', () => {
     cy.get(`[data-cy="mock-sp-login-button"]`).click();
-    cy.get(`[data-cy=cfp-campaign-card]`).first().should("be.visible"); //test should validate the stubbed response
+    cy.get(`[data-cy=cfp-campaign-card]`).first().should("be.visible"); // test should validate the stubbed response
   })
 
   after(() => {
